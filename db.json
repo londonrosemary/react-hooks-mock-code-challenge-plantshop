@@ -41,6 +41,60 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Snake Plant",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2012/03/houseplant-sansevieria.jpg",
+      "price": 40000000000,
+      "id": 8
+    },
+    {
+      "name": "Snake Plant",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2012/03/houseplant-sansevieria.jpg",
+      "price": 40000000000,
+      "id": 9
+    },
+    {
+      "name": "Please",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2008/05/rubber-plant.jpg",
+      "price": 22,
+      "id": 10
+    },
+    {
+      "name": "tryAgain",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2008/05/rubber-plant.jpg",
+      "price": 45,
+      "id": 11
+    },
+    {
+      "name": "help",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2008/05/rubber-plant.jpg",
+      "price": 45,
+      "id": 12
+    },
+    {
+      "name": "hdsvjnk",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2008/05/rubber-plant.jpg",
+      "price": 45,
+      "id": 13
+    },
+    {
+      "name": "test",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2012/03/houseplant-sansevieria.jpg",
+      "price": 34,
+      "id": 14
+    },
+    {
+      "name": "test",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2012/03/houseplant-sansevieria.jpg",
+      "price": 344,
+      "id": 15
+    },
+    {
+      "name": "t",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzux4SQXBi_sHxzz29VxOjhx6BpwhVEl6XQg&usqp=CAU",
+      "price": 55,
+      "id": 16
     }
   ]
 }

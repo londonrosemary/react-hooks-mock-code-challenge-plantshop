@@ -1,14 +1,41 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
 
 function PlantPage() {
+  const [fetchSwitch, setFetchSwitch] = useState(false)
+  const [plants, setPlants] = useState([])
+  
+  useEffect(()=>{
+    fetchPlants()
+  } 
+  ,[fetchSwitch])
+
+  function fetchPlants(){
+    fetch("http://localhost:6001/plants")
+      .then(resp=>resp.json())
+      .then(data=>setPlants(data))
+  }
+
+  function postFormData(newPlant){
+    fetch("http://localhost:6001/plants",{
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newPlant)
+    })
+    .then(
+      console.log("New plant posted!"),
+      setFetchSwitch(!fetchSwitch))
+  }
+
   return (
     <main>
-      <NewPlantForm />
+      <NewPlantForm postFormData={postFormData}/>
       <Search />
-      <PlantList />
+      <PlantList plants={plants} />
     </main>
   );
 }
