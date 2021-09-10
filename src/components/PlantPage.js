@@ -6,6 +6,7 @@ import Search from "./Search";
 function PlantPage() {
   const [fetchSwitch, setFetchSwitch] = useState(false)
   const [plants, setPlants] = useState([])
+  const [searchBar, setSearchBar] = useState("")
   
   useEffect(()=>{
     fetchPlants()
@@ -31,11 +32,15 @@ function PlantPage() {
       setFetchSwitch(!fetchSwitch))
   }
 
+  const filteredPlants= plants.filter((plant) =>
+    plant.name.toLowerCase().includes(searchBar.toLowerCase())
+  )
+
   return (
     <main>
       <NewPlantForm postFormData={postFormData}/>
-      <Search />
-      <PlantList plants={plants} />
+      <Search searchBar={searchBar} setSearchBar={setSearchBar}/>
+      <PlantList plants={filteredPlants} />
     </main>
   );
 }
